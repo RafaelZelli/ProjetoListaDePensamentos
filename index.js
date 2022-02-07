@@ -10,6 +10,10 @@ const app = express()   //Inicia o Express
 
 const conn = require('./db/conn')
 
+//Chama os models
+const Tought = require('./models/Tought')
+const User = require('./models/User')
+
 //Configurando a Template engine
 // app.engine('handlebars', exphbs())  deu erro este, substitui pelo de baixo \/
 app.engine('handlebars', engine({ extname: '.hbs', defaultLayout: "main"}));
@@ -65,7 +69,7 @@ app.use((req, res, next) => {
 
 
 conn
-    .sync()
+    .sync()  //.sync({force:true}) força a ligação entre tabelas
     .then(() => {
         app.listen(3000)
     })
