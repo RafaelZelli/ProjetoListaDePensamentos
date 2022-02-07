@@ -1,0 +1,35 @@
+{
+  "name": "projeto-toughts---nodejs",
+  "version": "1.0.0",
+  "description": "Projeto de um cadastro de uma rede de pensamento em NodeJS utilizando Express, Sequelize, MVC e Banco Relacionais",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./index.js localhost 3000"
+  },
+  "keywords": [
+    "nodejs",
+    "NodeJS",
+    "express",
+    "sequelize",
+    "mvc"
+  ],
+  "author": "Rafael Zelli",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.6",
+    "cookie-session": "^2.0.0",
+    "express": "^4.17.2",
+    "express-flash": "^0.0.2",
+    "express-handlebars": "^6.0.2",
+    "express-session": "^1.17.2",
+    "install": "^0.13.0",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.15",
+    "npm": "^8.4.1",
+    "sequelize": "^6.14.1",
+    "session-file-store": "^1.5.0"
+  }
+}
